@@ -1,0 +1,11 @@
+package com.algaworks.osworks.api.model;
+
+import java.time.OffsetDateTime;
+
+public class ComentarioDTO {
+
+	private Long id;
+	private String descricao;
+	private OffsetDateTime;
+	
+}

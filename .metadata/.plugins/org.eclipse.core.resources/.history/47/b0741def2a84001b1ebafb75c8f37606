@@ -1,0 +1,23 @@
+package com.algaworks.osworks.api.controller;
+
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.algaworks.osworks.api.model.ComentarioDTO;
+import com.algaworks.osworks.api.model.ComentarioInput;
+import com.algaworks.osworks.domain.service.OrdemServicoService;
+
+@RestController
+@RequestMapping("/ordens-servico/{ordemServicoId}/comentarios}")
+public class ComentarioController {
+	
+	private OrdemServicoService ordemService;
+
+	@PostMapping
+	public ComentarioDTO adicionarComentario(@PathVariable Long ordemServicoId,Valid  @RequestBody ComentarioInput comentario) {
+		return 
+	}
+}

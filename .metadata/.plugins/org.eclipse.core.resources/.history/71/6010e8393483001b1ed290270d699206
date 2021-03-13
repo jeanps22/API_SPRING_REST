@@ -1,0 +1,10 @@
+package com.algaworks.osworks.api.exceptionhandler;
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
+
+//Um componente de Spring que faz o Tratamento de exception de todas as controller
+@ControllerAdvice
+public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
+
+}

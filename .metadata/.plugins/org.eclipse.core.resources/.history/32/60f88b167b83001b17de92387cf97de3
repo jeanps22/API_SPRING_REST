@@ -1,0 +1,6 @@
+package com.algaworks.osworks.domain.service;
+
+@Service
+public class ClienteService {
+
+}

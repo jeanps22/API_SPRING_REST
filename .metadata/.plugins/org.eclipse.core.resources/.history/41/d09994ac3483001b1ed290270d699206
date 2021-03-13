@@ -1,0 +1,9 @@
+package com.algaworks.osworks.api.exceptionhandler;
+
+import java.time.LocalDateTime;
+
+public class Problema {
+
+	private Integer status;
+	private LocalDateTime dataHora;
+}

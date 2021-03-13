@@ -1,0 +1,27 @@
+package com.algaworks.osworks.api.model;
+
+import java.time.OffsetDateTime;
+
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+
+import com.algaworks.osworks.domain.model.StatusOrdemServico;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonProperty.Access;
+
+public class OrdemServicoDTO {
+
+	private Long id;
+	private String nomeCliente;
+	private String descricao;
+	private BigDecimal preco;
+	@Enumerated(EnumType.STRING)
+	@JsonProperty(access = Access.READ_ONLY)
+	private StatusOrdemServico status;
+
+	@JsonProperty(access = Access.READ_ONLY)
+	private OffsetDateTime dataAbertura;
+
+	@JsonProperty(access = Access.READ_ONLY)
+	private OffsetDateTime dataFinalizacao;
+}

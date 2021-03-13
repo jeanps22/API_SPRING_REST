@@ -1,0 +1,4 @@
+spring.datasource.url=jdb:mysql//localhost/osworks2?createDatabaseIfNotExist=true&serverTimezone=UTC
+spring.datasource.username=root
+spring.datasource.password=
+

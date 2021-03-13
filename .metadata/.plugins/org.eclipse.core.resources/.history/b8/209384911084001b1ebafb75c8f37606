@@ -1,0 +1,14 @@
+package com.algaworks.osworks.api.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.algaworks.osworks.domain.service.OrdemServicoService;
+
+@RestController
+@RequestMapping("/ordens-servico")
+public class OrdemServicoController {
+
+	private OrdemServicoService ordemService;
+	
+}

@@ -1,0 +1,14 @@
+package com.algaworks.osworks.domain.model;
+
+import java.time.OffsetDateTime;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Comentario {
+
+	private Long id;
+	private OrdemServico ordemServico;
+	private String descricao;
+	private OffsetDateTime dataEnvio;
+}
